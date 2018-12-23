@@ -1,0 +1,8 @@
+com\examresults\AdminLogin.class
+com\examresults\GetResults.class
+com\examresults\Login.class
+com\examresults\VerifyResults.class
+com\examresults\FileUploadHandler.class
+com\examresults\Database.class
+com\examresults\AdminLogout.class
+com\examresults\Logout.class
