@@ -57,13 +57,13 @@
                     <goals>
                         <goal>check</goal>
                     </goals>
-                    <phase>compile</phase>
+                    <phase>verify</phase>
                 </execution>
             </executions>
             <configuration>
                 <effort>Max</effort>
                 <threshold>Low</threshold>
-                <failOnError>true</failOnError>
+                <failOnError>false</failOnError>
                 <includeFilterFile>/var/lib/jenkins/workspace/docker-app/include.xml</includeFilterFile>
               <!--  <excludeFilterFile>${project.basedir}/src/main/findbugs/findbugs-security-exclude.xml</excludeFilterFile> -->
                 <plugins>
