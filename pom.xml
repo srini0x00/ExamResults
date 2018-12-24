@@ -31,7 +31,7 @@
                    <effort>Max</effort>
                     <threshold>High</threshold>
                     <failOnError>false</failOnError>
-                    <includeFilterFile>${session.executionRootDirectory}/include.xml</includeFilterFile>
+                    <includeFilterFile>include.xml</includeFilterFile>
                      <!--<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
                     <xmlOutput>true</xmlOutput>
                     <!-- Optional directory to put spotbugs xdoc xml report -->
