@@ -26,13 +26,13 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>3.1.10</version>
+                <version>3.1.1</version>
                 <configuration>
                    <effort>Max</effort>
                     <threshold>High</threshold>
                     <failOnError>false</failOnError>
-                    <!--<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
-                    <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
+                    <includeFilterFile>${session.executionRootDirectory}/include.xml</includeFilterFile>
+                     <!--<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
                     <xmlOutput>true</xmlOutput>
                     <!-- Optional directory to put spotbugs xdoc xml report -->
                     <xmlOutputDirectory>target/site</xmlOutputDirectory>
