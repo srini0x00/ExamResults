@@ -51,7 +51,7 @@
 <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>findbugs-maven-plugin</artifactId>
-            <version>${findbug.version}</version>
+            <version>3.1.1</version>
             <executions>
                 <execution>
                     <goals>
@@ -64,13 +64,13 @@
                 <effort>Max</effort>
                 <threshold>Low</threshold>
                 <failOnError>true</failOnError>
-                <includeFilterFile>${project.basedir}/include.xml</includeFilterFile>
+                <includeFilterFile>/var/lib/jenkins/workspace/docker-app/include.xml</includeFilterFile>
               <!--  <excludeFilterFile>${project.basedir}/src/main/findbugs/findbugs-security-exclude.xml</excludeFilterFile> -->
                 <plugins>
                     <plugin>
                         <groupId>com.h3xstream.findsecbugs</groupId>
                         <artifactId>findsecbugs-plugin</artifactId>
-                        <version>${findbug.security.version}</version>
+                        <version>LATEST</version>
                     </plugin>
                 </plugins>
             </configuration>
