@@ -22,7 +22,7 @@
           <warSourceDirectory>WebContent</warSourceDirectory>
         </configuration>
       </plugin>
-      <!-- SpotBugs Static Analysis -->
+      <!-- SpotBugs Static Analysis  
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
@@ -32,21 +32,49 @@
                     <threshold>Medium</threshold>
                     <failOnError>true</failOnError>
                     <includeFilterFile>/include.xml</includeFilterFile>
-                     <!--<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
+                      <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile> 
                     <xmlOutput>true</xmlOutput>
-                    <!-- Optional directory to put spotbugs xdoc xml report -->
+                   Optional directory to put spotbugs xdoc xml report  
                     <xmlOutputDirectory>target/site</xmlOutputDirectory>
 <plugins>
                         <plugin>
                             <groupId>com.h3xstream.findsecbugs</groupId>
                             <artifactId>findsecbugs-plugin</artifactId>
-                            <version>LATEST</version> <!-- Auto-update to the latest stable -->
+                            <version>LATEST</version>  
                         </plugin>
                     </plugins>
                 </configuration>
             </plugin>
 
+-->
 
+<plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>findbugs-maven-plugin</artifactId>
+            <version>${findbug.version}</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                    <phase>compile</phase>
+                </execution>
+            </executions>
+            <configuration>
+                <effort>Max</effort>
+                <threshold>Low</threshold>
+                <failOnError>true</failOnError>
+                <includeFilterFile>${project.basedir}/include.xml</includeFilterFile>
+              <!--  <excludeFilterFile>${project.basedir}/src/main/findbugs/findbugs-security-exclude.xml</excludeFilterFile> -->
+                <plugins>
+                    <plugin>
+                        <groupId>com.h3xstream.findsecbugs</groupId>
+                        <artifactId>findsecbugs-plugin</artifactId>
+                        <version>${findbug.security.version}</version>
+                    </plugin>
+                </plugins>
+            </configuration>
+        </plugin>
 
  <plugin>
               <groupId>org.owasp</groupId>
