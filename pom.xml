@@ -26,12 +26,11 @@
             <plugin>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>3.0.3</version>
                 <configuration>
-                    <effort>max</effort>
-                    <threshold>Low</threshold>
-                  
-					<maxRank>Low</maxRank>
+                   <effort>Max</effort>
+                    <threshold>Severe</threshold>
+                    <failOnError>true</failOnError>
                     <!--<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
                     <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
                     <xmlOutput>true</xmlOutput>
