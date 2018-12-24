@@ -57,7 +57,7 @@
                     <goals>
                         <goal>check</goal>
                     </goals>
-                    <phase>verify</phase>
+                    <phase>compile</phase>
                 </execution>
             </executions>
             <configuration>
