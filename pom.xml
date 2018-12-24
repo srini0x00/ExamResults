@@ -29,9 +29,9 @@
                 <version>3.1.1</version>
                 <configuration>
                     <effort>max</effort>
-                   
-                    <failOnError>true</failOnError>
-					 
+                    <threshold>Low</threshold>
+                  
+					<maxRank>Low</maxRank>
                     <!--<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
                     <excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>-->
                     <xmlOutput>true</xmlOutput>
