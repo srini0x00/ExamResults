@@ -65,7 +65,7 @@
                 <effort>Max</effort>
                 <threshold>High</threshold>
                 <failOnError>false</failOnError>
-                <includeFilterFile>/var/lib/jenkins/workspace/docker-app/include.xml</includeFilterFile>
+                <includeFilterFile>./include.xml</includeFilterFile>
               <!--  <excludeFilterFile>${project.basedir}/src/main/findbugs/findbugs-security-exclude.xml</excludeFilterFile> -->
                 <plugins>
                     <plugin>
