@@ -16,7 +16,7 @@ import javax.servlet.ServletResponseWrapper;
 import javax.servlet.http.HttpServletResponse;
 
 public class Database {
-
+    private static final Logger LOGGER = Logger.getLogger(Login.class.getName());
 	private Connection connection = null;	    
     private ResultSet resultSet = null;
     private Statement statement = null;
