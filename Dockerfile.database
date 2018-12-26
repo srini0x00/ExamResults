@@ -2,7 +2,7 @@ FROM mysql/mysql-server:latest
 
 ADD docker-entrypoint-initdb.d/ /docker-entrypoint-initdb.d/
 
-MYSQL_ROOT_PASSWORD=toor
+ENV MYSQL_ROOT_PASSWORD=toor
 ENV MYSQL_DATABASE=users
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=toor
