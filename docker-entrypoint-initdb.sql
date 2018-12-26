@@ -15,4 +15,5 @@ CREATE TABLE `admin` (
   `PASSWORD` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `users` (`ID`, `USERNAME`, `PASSWORD`) VALUES (1, 'admin','admin'); 
 INSERT INTO `admin` (`ID`, `USERNAME`, `PASSWORD`) VALUES (1, 'admin','admin'); 
