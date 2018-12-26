@@ -22,21 +22,27 @@ public class Database {
     
 	public boolean openConnection() {
 		
+		LOGGER.log( Level.INFO, "Invoked Connection method" );
+
 		boolean flag = false;
 		
 		try {
-			
+			LOGGER.log( Level.INFO, "Inside Try" );
 			//Load MySQL Driver
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection("jdbc:mysql://192.168.20.10:3306/users?serverTimezone=UTC","root","toor");
 			flag = true;
+
+			LOGGER.log( Level.INFO, "Flag is set to: "+flag );
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			LOGGER.log( Level.INFO, "In Catch 1"  );
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();			
+			e.printStackTrace();	
+			LOGGER.log( Level.INFO, "In Catch 2"  );		
 		}
 		return flag;
 		
