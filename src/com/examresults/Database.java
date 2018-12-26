@@ -44,7 +44,7 @@ public class Database {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();	
-			LOGGER.log( Level.INFO, "In Catch 2"  );		
+			LOGGER.log( Level.INFO, "In Catch 2" + e.printStackTrace() );		
 		}
 		return flag;
 		
