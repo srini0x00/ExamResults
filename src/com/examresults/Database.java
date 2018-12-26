@@ -45,7 +45,7 @@ public class Database {
 			// TODO Auto-generated catch block
 			e.printStackTrace();	
 			LOGGER.log( Level.INFO, "In Catch 2"  );	
-			LOGGER.log( Level.INFO, e.printStackTrace  );	
+			LOGGER.log( Level.INFO, e );	
 		}
 		return flag;
 		
