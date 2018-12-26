@@ -1,4 +1,4 @@
-FROM mysql:mysql-server
+FROM mysql:latest
 
 ADD docker-entrypoint-initdb.sql/ /docker-entrypoint-initdb.d/
 
