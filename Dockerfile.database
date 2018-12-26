@@ -1,4 +1,4 @@
-FROM mysql:8.0.3
+FROM mysql:mysql-server
 
 ADD docker-entrypoint-initdb.sql/ /docker-entrypoint-initdb.d/
 
@@ -7,3 +7,5 @@ ENV MYSQL_DATABASE=users
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=toor
 ENV MYSQL_ROOT_HOST=%
+
+CMD ["mysqld"]
