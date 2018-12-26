@@ -28,7 +28,7 @@ public class Database {
 			
 			//Load MySQL Driver
 			Class.forName("com.mysql.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://172.17.0.1:3306/users?serverTimezone=UTC","root","toor");
+			connection = DriverManager.getConnection("jdbc:mysql://192.168.20.10:3306/users?serverTimezone=UTC","root","toor");
 			flag = true;
 			
 		} catch (ClassNotFoundException e) {
