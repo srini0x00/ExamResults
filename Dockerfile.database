@@ -1,11 +1,10 @@
-FROM srini0x00/securestoreserver
+FROM mysql/mysql-server:latest
 
-#ADD docker-entrypoint-initdb.sql/ /docker-entrypoint-initdb.d/
+ADD docker-entrypoint-initdb.sql/ /docker-entrypoint-initdb.d/
 
-#ENV MYSQL_ROOT_PASSWORD=toor
-#ENV MYSQL_DATABASE=users
-#ENV MYSQL_USER=root
-#ENV MYSQL_PASSWORD=toor
-#ENV MYSQL_ROOT_HOST=%
-
-#CMD ["mysqld"]
+ENV MYSQL_ROOT_PASSWORD=toor
+ENV MYSQL_DATABASE=users
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=toor
+ENV MYSQL_ROOT_HOST=127.0.0.1
+ 
