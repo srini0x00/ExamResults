@@ -1,4 +1,5 @@
-FROM mysql/mysql-server:latest
+#FROM mysql/mysql-server:latest
+FROM mysql 
 
 ADD docker-entrypoint-initdb.sql/ /docker-entrypoint-initdb.d/
 
@@ -6,5 +7,5 @@ ENV MYSQL_ROOT_PASSWORD=toor
 ENV MYSQL_DATABASE=users
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=toor
-ENV MYSQL_ROOT_HOST=0.0.0.0
+ENV MYSQL_ROOT_HOST=mysql-db
  
