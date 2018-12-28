@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "ExamResults ThreatModel",
+    "owner": "srini0x00",
+    "description": "ExamResults Application for students to see their results."
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "New1",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "srini0x00"
+  }
+}
